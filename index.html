@@ -523,60 +523,89 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-          <label class="modal-label"
-            >Ім'я
-            <div class="input-block">
-              <input
-                type="text"
-                name="user-name"
-                class="modal-input"
-                required
-                placeholder=" "
-              />
-              <svg class="form-icon form-icon-name" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-Vector"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-label"
-            >Телефон
-            <div class="input-block">
-              <input type="tel" name="user-tel" class="modal-input" required />
-              <svg class="form-icon form-icon-phone" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-label"
-            >Пошта
-            <div class="input-block">
-              <input
-                type="email"
-                name="user-mail"
-                class="modal-input"
-                required
-              />
-              <svg class="form-icon form-icon-envelope" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-email"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="modal-label"
-            >Коментар
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Введіть текст"
-              class="modal-textarea"
-            ></textarea>
-          </label>
-          <label class="form-checkbox">
-            <input type="checkbox" class="input-checkbox" required />Погоджуюся
-            з розсилкою та приймаю
-            <span> <a href="#" class="lcens-link"> Умови договору</a></span>
-          </label>
+          <div class="modal-field">
+            <label class="modal-label"
+              >Ім'я
+              <div class="input-block">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="modal-input"
+                  required
+                  placeholder=" "
+                />
+                <svg class="form-icon form-icon-name" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label"
+              >Телефон
+              <div class="input-block">
+                <input
+                  type="tel"
+                  name="user-tel"
+                  class="modal-input"
+                  required
+                />
+                <svg class="form-icon form-icon-phone" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label"
+              >Пошта
+              <div class="input-block">
+                <input
+                  type="email"
+                  name="user-mail"
+                  class="modal-input"
+                  required
+                />
+                <svg
+                  class="form-icon form-icon-envelope"
+                  width="18"
+                  height="18"
+                >
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label"
+              >Коментар
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Введіть текст"
+                class="modal-textarea"
+              ></textarea>
+            </label>
+          </div>
+          <div class="checkbox-block">
+            <input
+              type="checkbox"
+              class="input-checkbox visually-hidden"
+              id="checkbox"
+              required
+            />
+            <label for="checkbox" class="form-checkbox">
+              <span class="svg-element">
+                <svg class="svg-icon-check" width="16" height="15">
+                  <use href="./images/symbol-defs.svg#icon-Vector--check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="lcens-link"> Умови договору</a>
+            </label>
+          </div>
           <div class="button-form-block">
             <button type="submit" class="button-form">Відправити</button>
           </div>
