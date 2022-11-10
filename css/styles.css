@@ -416,6 +416,10 @@ body {
     border:none;
 }
 
+.input-checkbox:focus+.form-checkbox span {
+border-color: var(--accent-color);
+}
+
 .button-form{
     
     width: 200px;
